@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+
+body {
+  background-image: url("../img/klim-musalimov-rDMacl1FDjw-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Montserrat";
+}
+
+.main {
+  max-width: 960px;
+  margin: 0px auto;
+  padding: 0px 15px;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.notes__title {
+  color: #fff;
+  font-size: 38px;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+#light .notes__title {
+  color: black;
+}
+
+#light .weather__info {
+  color: black;
+}
+
+
+
+.notes {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+}
+
+@media screen and (max-width: 900px) {
+  .notes {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .notes {
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+  }
+}
+
+.weather__info {
+  color: #fff;
+  white-space: pre-line;
+}
+
+.docs {
+  white-space: pre-wrap;
+  color: white;
+  border: 1px solid white;
+  background-image: url("../img/klim-musalimov-rDMacl1FDjw-unsplash.jpg");
+  background-repeat: no-repeat;
+  box-shadow: inset -6px -4px 2px rgba(255, 255, 255, 0.03);
+  border-radius: 15px;
+}
+
+#light .docs {
+  color: black;
+  border-color: black;
+  background-image: url('../img/anchor-lee-kO1G3neRA2o-unsplash.jpg');
+  background-repeat: no-repeat;
+}
+
+
+#dark {
+  background-image: url("../img/klim-musalimov-rDMacl1FDjw-unsplash.jpg");
+  background-repeat: no-repeat;
+}
+
+#light {
+  background-image: url('../img/anchor-lee-kO1G3neRA2o-unsplash.jpg');
+  background-repeat: no-repeat;
+}
+
+.modeSwitch {
+  display: flex;
+  width: 75vw;
+  height: 30px;
+  justify-content: right;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.modeSwitch label {
+  margin: 10px 10px;
+}
+
+.sources {
+  white-space: pre-wrap;
+  color: white;
+  border: 1px solid white;
+  background-image: url("../img/klim-musalimov-rDMacl1FDjw-unsplash.jpg");
+  background-repeat: no-repeat;
+  box-shadow: inset -6px -4px 2px rgba(255, 255, 255, 0.03);
+  border-radius: 15px;
+}
+
+#light .sources {
+  color: black;
+  border-color: black;
+  background-image: url('../img/anchor-lee-kO1G3neRA2o-unsplash.jpg');
+  background-repeat: no-repeat;
+}
+
+#light .modeSwitch label {
+  color: black;
+}
+
+#dark .modeSwitch label {
+  color: white;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

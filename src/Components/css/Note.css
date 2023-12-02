@@ -1,0 +1,149 @@
+.note {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: inset -6px -4px 2px rgba(255, 255, 255, 0.03);
+    border-radius: 15px;
+    border: 1.5px solid rgba(255, 255, 255, 0.326);
+    color: #fff;
+    padding: 15px;
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    word-wrap: break-word;
+}
+
+#light .note {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: inset -6px -4px 2px rgba(255, 255, 255, 0.03);
+    border-radius: 15px;
+    border: 1.5px solid black;
+    color: #fff;
+    padding: 15px;
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    word-wrap: break-word;
+}
+
+.note__title {
+    min-height: 21px;
+    white-space: pre-line;
+    font-weight: bold;
+}
+
+#light .note__title {
+    color: black;
+}
+
+.note__body {
+    min-height: 79px;
+    white-space: pre-line;
+}
+
+.note__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.note__edit {
+    align-items: baseline;
+    margin-left: 82%;
+}
+
+.note textarea {
+    white-space: pre-wrap;
+    background: transparent;
+    border: none;
+    color: #fff;
+    resize: none;
+    font-size: 18px;
+}
+
+#light .divider {
+    color: gray;
+}
+
+#light .note textarea {
+    color: black;
+}
+
+.note textarea:focus {
+    outline: none;
+}
+
+.note textarea::placeholder {
+    color: #fff;
+}
+
+#light .note textarea::placeholder {
+    color: black;
+}
+
+.note__save {
+    background: transparent;
+    transition: 0.1s ease-in-out;
+    border: 1.5px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    padding: 4px 10px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+#light .note__save {
+    color: black;
+    border: 1.5px solid black;
+}
+
+.note__save:hover {
+    background: #fff;
+    border: 1.5px solid #fff;
+    color: #4b1589;
+}
+
+#light .note__save:hover {
+    background: black;
+    border: 1.5px solid gray;
+    color: white;
+}
+
+.note__delete {
+    cursor: pointer;
+}
+
+#light .note__delete {
+    cursor: pointer;
+    color: black;
+}
+
+.note__delete:hover {
+    transform: scale(1.1);
+}
+
+#light .note__delete:hover {
+    transform: scale(1.1);
+    color: red;
+}
+
+#dark .note__delete:hover {
+    transform: scale(1.1);
+    color: red;
+}
+
+
+
+#dark {
+    background-image: url("../img/klim-musalimov-rDMacl1FDjw-unsplash.jpg");
+    background-repeat: no-repeat;
+}
+
+#light {
+    background-image: url('../img/anchor-lee-kO1G3neRA2o-unsplash.jpg');
+    background-repeat: no-repeat;
+}
