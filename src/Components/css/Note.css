@@ -43,6 +43,12 @@
     white-space: pre-line;
 }
 
+#light .note__body {
+    min-height: 79px;
+    white-space: pre-line;
+    color: black;
+}
+
 .note__footer {
     display: flex;
     align-items: center;
